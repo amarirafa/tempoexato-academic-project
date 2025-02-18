@@ -1,0 +1,170 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #0079A1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.185);
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.logotipo img {
+    margin-top: 7px;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar input {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar button {
+    background: #0079A1;
+    border-radius: 10px;
+    color: white;
+}
+
+section {
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px;
+    margin: auto;
+}
+
+section h1 {
+    background: #F0C741;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: large;
+}
+
+section p {
+    font-size: 20px;
+}
+
+#image {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#icon {
+    background: #5f9f3d;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Versão para desktop */
+@media (min-width: 500px) {
+    header {
+        height: 80px;
+    }
+
+    .logotipo img {
+        width: 120px;
+        padding: 20px;
+    }
+
+    .search-bar {
+        max-width: 600px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    
+    .search-bar button {
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    section {
+        max-width: 600px;
+        width: 90%;
+    }
+    section h1 {
+        font-size: 30px;
+    }
+    
+    section p {
+        font-size: 20px;
+    }
+    
+    #icon {
+        width: 50px;
+    }
+}
+
+/* Versão para mobile */
+@media (max-width: 500px) {
+    body {
+        font: normal 7pt Arial;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    .logotipo img {
+        width: 75px;
+        padding: 5px;
+    }
+
+    .search-bar {
+        max-width: 300px;
+    }
+
+    .search-bar input {
+        padding: 5px;
+        margin-right: 7px;
+    }
+    
+    .search-bar button {
+        padding: 5px 5px;
+        margin-right: 7px;
+    }
+
+    section {
+        max-width: 400px;
+        width: 80%;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+    
+    section p {
+        font-size: 15px;
+    }
+    
+    #image {
+        width: 120px;
+    }
+    
+    #icon {
+        width: 30px;
+    }
+}
